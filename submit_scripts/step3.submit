@@ -1,0 +1,19 @@
+#Dataset Processing
+
+executable = /data/user/akatil/electron_neutrino/for_real/analysis_chain/submit_scripts/step3.sh
+
+dataset = $(DATASET)
+num_queue = $(QUEUE)
+
+log = /scratch/akatil/electron_neutrino/step3_getVar_$(dataset)_$(Process).log
+output = /data/user/akatil/electron_neutrino/for_real/logFiles/step3/step3_getVar_$(dataset)_$(Process).out
+error = /data/user/akatil/electron_neutrino/for_real/logFiles/step3/step3_getVar_$(dataset)_$(Process).err
+
+should_transfer_files = YES
+when_to_transfer_output = ON_EXIT
+requestCpus = 1
+requestMemory = 8192
+
+arguments = $(dataset) $(Process)
+
+queue $(num_queue)

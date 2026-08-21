@@ -1,0 +1,18 @@
+#Dataset Processing
+
+executable = /data/user/akatil/electron_neutrino/for_real/analysis_chain/submit_scripts/make_ids.sh
+
+dataset = $(DATASET)
+
+log = /scratch/akatil/electron_neutrino/make_ids_$(dataset).log
+output = /data/user/akatil/electron_neutrino/for_real/logFiles/step2/make_ids_$(dataset).out
+error = /data/user/akatil/electron_neutrino/for_real/logFiles/step2/make_ids_$(dataset).err
+
+should_transfer_files = YES
+when_to_transfer_output = ON_EXIT
+requestCpus = 1
+requestMemory = 4096
+
+arguments = $(dataset)
+
+queue

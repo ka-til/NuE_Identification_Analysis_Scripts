@@ -1,0 +1,14 @@
+#Dataset Processing
+
+executable = /data/user/akatil/electron_neutrino/for_real/analysis_chain/bdt_scripts/submit_scripts/decision_tree.sh
+
+log = /scratch/akatil/electron_neutrino/decision_tree.log
+output = /data/user/akatil/electron_neutrino/for_real/logFiles/bdt/decision_tree.out
+error = /data/user/akatil/electron_neutrino/for_real/logFiles/bdt/decision_tree.err
+
+should_transfer_files = YES
+when_to_transfer_output = ON_EXIT
+requestCpus = 1
+requestMemory = 6144
+
+queue

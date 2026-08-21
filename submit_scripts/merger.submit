@@ -1,0 +1,22 @@
+#Dataset Processing
+
+executable = /data/user/akatil/electron_neutrino/for_real/analysis_chain/submit_scripts/merger.sh
+
+#dataset = $(DATASET)
+
+#log = /scratch/akatil/electron_neutrino/merger_h5_$(dataset).log
+#output = /data/user/akatil/electron_neutrino/for_real/logFiles/step4/merger_h5_$(dataset).out
+#error = /data/user/akatil/electron_neutrino/for_real/logFiles/step4/merger_h5_$(dataset).err
+
+log = /scratch/akatil/electron_neutrino/make_bdt_dataset_muon_h5.log
+output = /data/user/akatil/electron_neutrino/for_real/logFiles/step4/make_bdt_dataset_muon_h5.out
+error = /data/user/akatil/electron_neutrino/for_real/logFiles/step4/make_bdt_dataset_muon_h5.err
+
+should_transfer_files = YES
+when_to_transfer_output = ON_EXIT
+requestCpus = 1
+requestMemory = 8192
+
+#arguments = $(dataset)
+
+queue

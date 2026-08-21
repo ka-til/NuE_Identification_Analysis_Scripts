@@ -1,0 +1,20 @@
+#Dataset Processing
+
+executable = /data/user/akatil/electron_neutrino/for_real/analysis_chain/bdt_scripts/submit_scripts/gradient_boosting.sh
+
+log = /scratch/akatil/electron_neutrino/gradient_boosting_first_iter_numu.log
+#gradient_boosting_random_search1_numu.log
+#gradient_boosting_eight_iter.log
+output = /data/user/akatil/electron_neutrino/for_real/logFiles/bdt/gradient_boosting_first_iter_numu.out
+#gradient_boosting_random_search1_numu.out
+#gradient_boosting_eight_iter.out
+error = /data/user/akatil/electron_neutrino/for_real/logFiles/bdt/gradient_boosting_first_iter_numu.err
+#gradient_boosting_random_search1_numu.err
+#gradient_boosting_eight_iter.err
+
+should_transfer_files = YES
+when_to_transfer_output = ON_EXIT
+requestCpus = 1
+requestMemory = 6144
+
+queue
